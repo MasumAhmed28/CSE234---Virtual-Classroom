@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="home" maxHeight="600.0" maxWidth="900.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" styleClass="AnchorPane" stylesheets="@../CasscadingSheets/sustPIC.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="virtualcrlogin.FXMLDocumentController">
+   <children>
+      <AnchorPane layoutX="159.0" layoutY="104.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" opacity="0.57" prefHeight="373.0" prefWidth="601.0" style="-fx-background-color: #F0F1F0;" AnchorPane.bottomAnchor="123.0" AnchorPane.leftAnchor="159.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="104.0">
+         <padding>
+            <Insets bottom="113.0" left="150.0" right="149.0" top="114.0" />
+         </padding>
+         <children>
+            <JFXTextField focusColor="#80162b" layoutX="25.0" layoutY="79.0" prefHeight="36.0" prefWidth="242.0" promptText=" Username" unFocusColor="#a82f2f">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField focusColor="#00040d" layoutX="25.0" layoutY="155.0" prefHeight="25.0" prefWidth="242.0" promptText=" Password" unFocusColor="#7c1010">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton buttonType="RAISED" layoutX="25.0" layoutY="297.0" prefHeight="29.0" prefWidth="242.0" ripplerFill="#ee1c1c" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5em;" text="Forget PassWord?" textFill="#220202">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="25.0" layoutY="252.0" prefHeight="30.0" prefWidth="242.0" ripplerFill="#f7f7f2fc" style="-fx-background-color: #31B0D5; -fx-background-radius: 5em;" text="Sign in">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="299.0" layoutY="296.0" prefHeight="31.0" prefWidth="227.0" ripplerFill="#ebeaea" style="-fx-background-color: #31B0D5; -fx-background-radius: 5em;" text="Register" textFill="#570b0b">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </JFXButton>
+            <Text layoutX="312.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="We'r here to meet your demand and help you get rid of facebooking and also time wasting. You can see Dynamic routine and Cautions in here." textAlignment="CENTER" wrappingWidth="213.99999931454659">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="17.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="70.0" fitWidth="266.0" layoutX="301.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../CasscadingSheets/q.png" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="shutdown" fitHeight="29.0" fitWidth="25.0" layoutX="875.0" onMouseClicked="#handleButtonAction" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../CasscadingSheets/Shutdown1.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="minus" fitHeight="29.0" fitWidth="25.0" layoutX="847.0" layoutY="1.0" onMouseClicked="#handleButtonAction" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../CasscadingSheets/Minus.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
